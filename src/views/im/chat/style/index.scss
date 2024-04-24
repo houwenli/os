@@ -1,0 +1,517 @@
+@mixin toCla {
+    color: #a5b5c1;
+    font-size: 12px;
+}
+@mixin toClb {
+    display: inline-block;
+    > div:nth-child(1):before {
+        content: '';
+        width: 0px;
+        height: 0px;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+
+        position: absolute;
+        top: 10px;
+        font-size: 7px;
+    }
+    > div:nth-child(2) {
+        color: #a5b5c1;
+        font-size: 12px;
+        margin-top: 9px;
+    }
+    > div:nth-child(1) {
+        outline: none;
+        font-size: 14px;
+        position: relative;
+        max-width: 350px;
+        word-wrap: break-word;
+        word-break: break-all;
+        background: #fff;
+        border-radius: 5px;
+        display: inline-block;
+        padding: 10px;
+        -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+}
+.box {
+    // min-height: 900px;
+    // max-height: 960px;
+    // height: auto !important;
+    display: flex;
+    -moz-box-shadow: 2px 2px 5px #333333;
+    -webkit-box-shadow: 2px 2px 5px #333333;
+    box-shadow: 2px 2px 5px #333333;
+    position: relative;
+    .t_left {
+        width: 368px;
+        min-width: 368px;
+        max-width: 368px;
+        background: #fff;
+        margin-right: 16px;
+        border-radius: 0 8px 0 0;
+        display: flex;
+        flex-direction: column;
+        /** 搜索行 */
+        .seek {
+            overflow: hidden;
+            width: 368px;
+            height: 73px;
+            background: #FFFFFF;
+            border-radius: 8px 8px 0px 0px;
+            padding: 16px 16px 0 16px;
+            /deep/.el-input__inner {
+                height: 40px;
+                border: 0 !important;
+                border-radius: 20px !important;
+                background: #F0F2F5;
+                cursor: pointer;
+            }
+            hr {
+                margin-top: 16px;
+                height: 1px;
+                background: #EBEEF5;
+                border: 0;
+            }
+        }
+    }
+    .t_right {
+        flex: 1;
+        flex-direction: column;
+        background: #f3f3f3;
+        // min-width: 800px;
+        border-radius: 8px 8px 8px 8px;
+        display: flex;
+        margin-bottom: 16px;
+        /** 聊天框头部 */
+        .t_right_top {
+            border-radius: 8px 8px 0px 0px;
+            background: #fff;
+            height: 73px;
+            position: relative;
+            padding: 0 16px;
+            .t_right_top_box {
+                padding-top: 16px;
+                display: flex;
+                .t_right_top_left {
+                    flex: 1;
+                    display: flex;
+                    .info-box {
+                        margin-left: 16px;
+                        div:nth-child(1) {
+                            height: 22px;
+                            font-size: 16px;
+                            font-family: PingFangSC-Semibold, PingFang SC;
+                            font-weight: 600;
+                            color: #303133;
+                            line-height: 22px;
+                        }
+                        div:nth-child(2){
+                            height: 20px;
+                            font-size: 14px;
+                            font-family: PingFangSC-Regular, PingFang SC;
+                            font-weight: 400;
+                            color: #909399;
+                            line-height: 20px;
+                        }
+                    }
+                }
+                .t_right_top_right {
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding-top: 8px;
+                    i{
+                        font-size: 24px;
+                        width: 24px;
+                        height: 24px;
+                        margin-left: 16px;
+                    }
+                    .add-user {
+                        background: url('../image/add-user.png') no-repeat;
+                        display: inline-block;
+                        background-size: 100%;
+                    }
+                    .el-icon-setting {
+                        margin-top: 5px;
+                    }
+                    .topRightIcon {
+                        width: 24px;
+                        height: 24px;
+                        margin-left: 16px;
+                    }
+                }
+            }
+            hr {
+                margin-top: 12px;
+                height: 1px;
+                background: #EBEEF5;
+                border: 0;
+            }
+        }
+        /** 聊天内容 */
+        .t_right_con {
+            // height: 600px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            flex-direction: column;
+            overflow-y: auto;
+            overflow-x: hidden;
+            background: #fff;
+            padding: 16px 16px 13px 16px;
+            .t_r_nmore {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                font-size: 13px;
+                color: #a5b5c1;
+                background: 0 0;
+                padding-left: 0;
+                padding-right: 0;
+                cursor: pointer;
+            }
+            .t_r_more {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                font-size: 13px;
+                color: #409eff;
+                background: 0 0;
+                padding-left: 0;
+                padding-right: 0;
+                cursor: pointer;
+            }
+            /** 聊天框样式 */ 
+            .message-item {
+                // min-height: 44px;
+                position: relative;
+                margin-top: 24px;
+                margin-bottom: 16px;
+                .TIMGroupTipElem {
+                    text-align: center;
+                    min-height: 17px;
+                    font-size: 12px;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: #909399;
+                    line-height: 17px;
+                }
+                /** 接收方 */
+                .t-recieve-message {
+                    display: flex;
+                    flex-direction: row;
+                    justify-items: flex-start;
+                }
+                /** 发送方 */
+                .t-self-message {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    position: relative;
+                    .read-status {
+                        align-self: flex-end;
+                        font-weight: 400;
+                        font-size: 12px;
+                        right: 56px;
+                        position: absolute;
+                        min-width: 82px;
+                        text-align: right;
+                        bottom: -16px;
+                        .read {
+                            color: #909399;
+                        }
+                        .unread {
+                            color: #0088FF;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                /** 聊天公共样式 */
+                .t-recieve-message,
+                .t-self-message {
+                    .mt20{
+                        margin-top: 20px;
+                    }
+                    .user-recieve-name{
+                        position: absolute;
+                        left: 57px;
+                    }
+                    .user-self-name{
+                        position: absolute;
+                        right: 57px;
+                    }
+                }
+                .t-self-message-body {
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    outline: none;
+                    margin-right: 16px;
+                }
+                .t-recieve-message-body {
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    outline: none;
+                    margin-left: 16px;
+                }
+                .t-self-message-body,
+                .t-recieve-message-body {
+                    min-width: 28px;
+                    max-width: 440px;
+                    padding: 12px;
+                    min-height: 44px;
+                    background: #F0F2F5;
+                    border-radius: 8px;
+                    line-height: 20px;
+                    text-align: justify;
+                    text-justify: distribute-all-lines;
+                    text-align-last: left;
+                    word-break: break-all;
+                }
+            }
+        }
+        /** 发送模块 */
+        .t_right_bot {
+            height: 227px;
+            background: #fff;
+            position: relative;
+            padding: 0 16px;
+            border-radius: 0 0 8px 8px;
+            hr {
+                height: 1px;
+                background: #EBEEF5;
+                border: 0;
+            }
+            /deep/.t_limit {
+                position: absolute;
+                right: 126px;
+                bottom: 22px;
+                font-size: 14px;
+                font-family: PingFangSC-Regular,PingFang SC;
+                font-weight: 400;
+                color: #909399;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                img{
+                    width: 16px;
+                    height: auto;
+                    margin: 0 4px;
+                }
+            }
+            /deep/textarea {
+                resize: none;
+                height: 105px;
+                border: 0;
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+                outline: none;
+            }
+            .r_i {
+                position: absolute;
+                right: 16px;
+                bottom: 15px;
+                width: 96px;
+                height: 36px;
+                background: #F05259;
+                border-radius: 4px;
+                font-size: 14px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #FFFFFF;
+            }
+            .rigit-box {
+                display: flex;
+                align-items: center;
+                font-size: 0;
+                padding-top: 13px;
+                padding-bottom: 23px;
+                .icture_a,
+                .icture {
+                    display: inline-block;
+                }
+                .message_white_box_icon {
+                    width: 24px;
+                    height: auto;
+                    margin-right: 6px;
+                }
+                .icture_a {
+                    display: inline-block;
+                    cursor: pointer;
+                    position: relative;
+                    /deep/.el-popover {
+                        width: 400px !important;
+                        height: 160px !important;
+                        overflow: auto !important;
+                    }
+                    /deep/.el-popover__reference{
+                        width: 30px;
+                        height: 30px;
+                        padding-top: 2px;
+                    }
+                }
+                .icture,
+                .icture-file {
+                    display: inline-block;
+                    margin-left: 6px;
+                    cursor: pointer;
+                    overflow: hidden;
+                    position: relative;
+                    input[type='file'] {
+                        color: transparent;
+                    }
+                    input {
+                        cursor: pointer !important;
+                        opacity: 0;
+                        width: 30px;
+                        height: 30px;
+                        left: 0;
+                        top: 0;
+                        position: absolute;
+                    }
+                    /deep/i {
+                        font-size: 30px;
+                    }
+                }
+                
+                
+            }
+        }
+        /** 右侧弹出框 */
+        /deep/.el-drawer__wrapper {
+            position: absolute;
+            top: 16px;
+            // right: 27px;
+            bottom: 16px;
+            left: 0;
+            overflow: hidden;
+            margin: 0;
+            border-radius: 8px;
+            z-index: 2005 !important;
+            .el-drawer {
+                border-radius: 0 8px 0 0;
+                .el-drawer__header{
+                    margin-bottom: 0;
+                    padding: 20px 20px 26px;
+                    border-bottom: 1px solid #EBEEF5;
+                    font-size: 18px;
+                    font-family: PingFangSC-Semibold, PingFang SC;
+                    font-weight: 600;
+                    color: #303133;
+                }
+                .el-drawer__body{
+                    padding: 16px 16px 0 16px;
+                }
+            }
+        }
+    }
+}
+/** 头像公共样式 */
+.t-message-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+.t-message-avatar-div {
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    background: #0088FF;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+// 信息回复
+.reference {
+    .reference-box {
+        display: flex;
+    }
+}
+// 信息@人员
+.memberList {
+    bottom: 160px;
+    min-height: 30px;
+    max-height: 300px;
+    overflow: hidden;
+    position: absolute;
+    background: #F0F2F5;
+    width: 300px;
+    .memberList-box {
+        min-height: 30px;
+        max-height: 300px;
+        padding-bottom: 40px;
+        overflow: auto;
+        cursor: pointer;
+        .memberList-box-header {
+            height: 25px;
+            line-height: 25px;
+        }
+        .memberList-box-body {
+            display: flex;
+            align-items: center;
+            > div{
+                margin: 4px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+.feedbackClass {
+    width: auto;
+    height: auto;
+    min-width: 200px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular,PingFang SC;
+    font-weight: 400;
+    color: #909399;
+    line-height: 20px;
+    padding: 12px;
+    background: #F0F2F5;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 259px;
+    margin-left: 16px;
+    max-width: 440px;
+    z-index: 2005;
+    .feedbackClass-box {
+        position: relative;
+        .feedDe {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            position: absolute;
+            right: -16px;
+            top: -16px;
+        }
+        // position: absolute;
+    }
+
+}

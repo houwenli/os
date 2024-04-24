@@ -1,0 +1,437 @@
+export default new Map([
+    //多服务配置,兼容两种写法
+    [
+        'VUE_APP_MESSAGE_API',
+        [
+            '/new/flowable/todoTask/select',
+            '/flowable/task/select',
+            '/new/flowable/ccTask/select',
+            '/flowable/common/select',
+            '/flowable/approvalInitiationRecord/select',
+            '/message/news/select',
+            '/message/news/uploadFile',
+            '/message/news/update',
+            '/message/news/delete',
+            '/message/news/save',
+            '/message/newsFile/select',
+            '/message/newsFile/uploadFile',
+            '/message/notice/select',
+            '/message/megPush/wyEmailPush',
+            '/message/feedback/select',
+            '/message/feedback/uploadFile',
+            '/message/feedback/save',
+            '/message/announcement/select',
+            '/message/announcement/update'
+        ]
+    ],
+    [
+        'VUE_APP_BUSINESS_API',
+        ['/integrated/select', '/cancelOrder/select', '/metis/schedule/select', '/metis/driver/select', '/metis/areahexagon/select', '/metis/passenger/select', '/common/operationUser/select']
+    ],
+    ['VUE_APP_LOG_API', ['/log/login/select', '/log/menu/select', '/log/system/select', '/log/app/select']],
+    [
+        'VUE_APP_PROCESS_API',
+        [
+            '/flowable/category/select',
+            '/flowable/category/save',
+            '/new/flowable/ccTask/select',
+            '/flowable/common/select',
+            '/flowable/definition/select',
+            '/flowable/definition/save',
+            '/flowable/definition/update',
+            '/flowable/definition/delete',
+            '/flowable/finTask/select',
+            '/flowable/finTask/save',
+            '/flowable/instance/select',
+            '/flowable/instance/update',
+            '/flowable/instance/delete',
+            '/flowable/task/select',
+            '/flowable/task/update',
+            '/flowable/task/delete',
+            '/flowable/task/save',
+            '/new/flowable/todoTask/select',
+            '/flowable/approvalInitiationRecord/select',
+            '/flowable/todoTask/save',
+            '/flowable/form/select',
+            '/flowable/form/save',
+            '/flowable/form/update',
+            '/flowable/form/delete',
+            '/flowable/userClient/select',
+            '/flowable/common/select',
+            '/new/flowable/definition/select',
+            '/new/flowable/definition/update',
+            '/new/flowable/definition/delete',
+            '/new/flowable/definition/save',
+            '/new/flowable/todoTask/save',
+            '/flowFile/upload',
+            '/flowable/common/select',
+            '/new/flowable/form/select',
+            '/new/flowable/user/select'
+        ]
+    ],
+    [
+        'VUE_APP_WORK_API',
+        [
+            '/orderManager/placeOrderDispatch/update',
+            '/orderManager/instantPlaceOrder/select',
+
+            '/cityLine/org/charge/update',
+            '/cityLine/org/charge/update',
+            '/companyFence/update',
+            '/enterprise/entmanage/update',
+            '/orderManager/instantOrder/select',
+            '/carOrder/driver/comment/select',
+            '/orderManager/placeOrderDispatch/update',
+            '/orderManager/reserveOrder/select',
+            '/orderManager/appointOrder/select',
+            '/orderManager/busCarDriverOrder/update',
+            '/dispatchlog/buscar/select',
+
+            '/myWorkSpace/export/select',
+            '/myWorkSpace/realtime/select',
+            '/common/select',
+            '/wsf/statistics/select',
+            '/wsf/analysis/select',
+            '/wsf/category/select',
+            '/wsf/search/select'
+        ],
+    ],
+    [
+        'VUE_APP_DRIVERMANAGER_API',
+        [
+            '/driver/vip/price/rule/select',
+            '/driver/vip/price/rule/update',
+            '/driver/vip/price/rule/delete',
+            '/driver/vip/price/rule/save',
+            '/driver/vip/price/rule/uploadFile',
+            '/driver/vip/rule/select',
+            '/driver/vip/rule/save',
+            '/driver/vip/rule/update',
+            '/exp/driverVipManagerController/select',
+            '/exp/driverVipManagerController/uploadFile',
+            '/exp/driverVipManagerController/save',
+            '/driver/vip/flow/select',
+            '/driver/vip/flow/save',
+            '/driver/vip/flow/uploadFile',
+            '/driver/vip/conf/select',
+            '/driver/vip/conf/update',
+            '/exp/changeApply/select',
+            '/driver/file/uploadFile',
+            '/exp/changeApply/save',
+            '/transport/assets/select',
+            '/artificial/dispatch/select',
+            '/artificial/dispatch/update',
+            '/ride/distibution/select', // 运力图谱接口
+            '/ride/expDistibution/select', // 运力图谱接口
+            '/local/selectOrgOption', // 运力图谱接口
+            '/ride/expLocationDistribution/select', // 运力图谱查询车主定位
+            '/exp/driverVirtuaVipManagerController/select',
+            '/exp/driverVirtuaVipManagerController/uploadFile',
+            '/driver/vip/flow/virtual/select',
+            '/driver/vip/flow/smart/select',
+            '/driver/vip/flow/virtual/uploadFile',
+            '/driver/vip/virtual/price/rule/select',
+            '/driver/vip/virtual/price/rule/uploadFile',
+            '/driver/vip/virtual/price/rule/delete',
+            '/driver/vip/virtual/price/rule/save',
+            '/driver/vip/virtual/rule/select',
+            '/driver/vip/virtual/rule/update',
+            '/driver/vip/virtual/rule/save',
+            '/exp/driverDrivingVipManagerController/select',
+            '/driver/vip/flow/driving/select',
+            '/driver/vip/flow/driving/uploadFile',
+            '/driver/vip/driving/price/rule/select',
+            '/driver/vip/driving/price/rule/uploadFile',
+            '/driver/vip/driving/price/rule/delete',
+            '/driver/vip/driving/price/rule/save',
+            '/driver/vip/driving/rule/select',
+            '/driver/vip/driving/rule/update',
+            '/driver/vip/driving/rule/save',
+            '/localLivingContract/select',
+            '/localLivingContract/update',
+            '/localLivingContract/save',
+            '/exp/unregister/virtual/vip/select',
+            '/exp/unregister/virtual/vip/update',
+            // 司机减佣卡
+            '/driver/commission/vip/flow/select',
+            '/exp/driverCommissionVipManagerController/select',
+            '/driver/exp/commission/package/select',
+            '/driver/exp/commission/package/uploadFile',
+            '/sos/select'
+        ]
+    ],
+    [
+        // 疫情防控
+        'VUE_APP_YQFK_API',
+        [
+            '/trafficTripManager/PreventionEpidemic/select',
+            '/trafficTripManager/PreventionEpidemic/save',
+            '/trafficTripManager/PreventionEpidemic/update',
+            '/trafficTripManager/PreventionEpidemic/enable',
+            '/trafficTripManager/PreventionEpidemic/delete',
+            '/trafficTrip/FenceService/select',
+            '/trafficTrip/fileService/uploadFile',
+            '/trafficTripManager/whiteList/select',
+            '/trafficTripManager/whiteList/delete',
+            '/trafficTripManager/whiteList/save',
+            '/trafficTripManager/whiteList/uploadFile',
+            '/trafficTripManager/epidemicRecord/select',
+            '/trafficTripManager/epidemicRecord/update',
+            '/huiZhou/epidemicPrevention/select',
+            '/trafficTrip/local/select'
+        ]
+    ],
+    [
+        // 首页新增分公司、服务中心、实体店、独立法人公司
+        'VUE_APP_OAORG_API',
+        [
+            '/local/selectAreaTreeNoPermission',
+            '/local/selectAreaTree',
+            '/resource/theCompany/select',
+            '/orgWeb/common/select',
+            '/resource/theCompany/save',
+            '/orgWeb/file/addAllAttachment',
+            '/resource/companyServiceCenter/save',
+            '/resource/companyServiceStation/save',
+            '/orgWeb/attachment/select',
+            '/resource/corporateCompany/select',
+            '/resource/corporateCompany/save',
+            '/orgWeb/file/upload',
+            '/orgWeb/file/addAttachment',
+            '/resource/companyServiceCenter/select',
+            '/resource/companyServiceStation/select',
+            '/resource/companyServiceStation/update',
+            '/orgWeb/operationLog/select',
+            '/resource/theCompany/update',
+            '/resource/companyServiceCenter/update',
+            '/resource/corporateCompany/update',
+            '/personManage/promoter/select',
+            '/personManage/promoter/save',
+            '/personManage/promoter/update',
+            '/personManage/bankCard/select',
+            '/local/selectOrgByOrgNameWithPermission',
+            '/local/selectOrgByOrgName',
+            '/org/ranking/save',
+            '/org/ranking/select',
+            '/personManage/bankCard/save',
+            '/local/selectBusinessCityListTree',
+            '/personManage/bankCard/update'
+        ]
+    ],
+    [
+        'VUE_APP_NEED_API',
+        [
+            '/demand/apply/select',
+            '/demand/draft/update',
+            '/demand/apply/save',
+            '/demand/draft/select',
+            '/demand/draft/delete',
+            '/demand/manage/select',
+            '/project/docManagement/update',
+            '/demand/manage/update',
+            '/project/personnel/manage/select',
+            '/demand/business/apply/select',
+            '/demand/business/apply/save',
+            '/project/docManagement/uploadFile',
+            '/demand/daijia/apply/select',
+            '/demand/daijia/apply/save'
+        ]
+    ],
+    [
+        'VUE_APP_COUPON_API',
+        [
+            '/cardcoupon/applyTravelCoupon/passApplyCompensation',
+            '/cardcoupon/applyTravelCoupon/listTravelCoupon',
+            '/cardcoupon/applyRedPacket/listRedPacket',
+            '/cardcoupon/applyTravelCoupon/insertApplyTravelCoupon',
+            '/cardcoupon/applyRedPacket/insertApplyRedPacket',
+            '/cardcoupon/activityFuka/insertActivityFuka',
+            '/cardcoupon/activityFuKaGrant/insertActivityFuKaGrant',
+            '/cardcoupon/applyTravelCoupon/addTravelCouponSubmit',
+            '/cardcoupon/applyRedPacket/addRedPacketSubmit',
+            '/cardcoupon/activityFuKaGrant/insertActivityFuKaGrant',
+            '/cardcoupon/activityFuka/passActivityFuka',
+            '/cardcoupon/applyRedPacket/passApplyRedPacket',
+            '/cardcoupon/applyTravelCoupon/passApplyTravelCoupon',
+            '/cardcoupon/applyOnlineRetailersCoupon/queryBrandInfo',
+            '/cardcoupon/applyOnlineRetailersCoupon/queryCategoryInfo',
+            '/cardcoupon/applyOnlineRetailersCoupon/pageSpuList',
+            '/cardcoupon/applyOnlineRetailersCoupon/pageSpuCount',
+            '/cardcoupon/applyOnlineRetailersCoupon/calculatePrice',
+            '/cardcoupon/applyOnlineRetailersCoupon/passApplyECoupon',
+            '/cardcoupon/applyOnlineRetailersCoupon/insertApplyECoupon',
+            '/cardcoupon/applyOnlineRetailersCoupon/querySpuRelationCoupon',
+            '/cardcoupon/applyOnlineRetailersCoupon/queryListByName',
+            '/change/electric/listByName',
+            '/cardcoupon/applyOnlineRetailersCoupon/batchUploadSpu',
+            '/cardcoupon/applyOnlineRetailersCoupon/queryImportList'
+        ]
+    ],
+    //分支机构 轨迹、自主下单
+    [
+        'VUE_APP_PARTNER_API',
+        [
+            '/system/driverTrail/select',
+            '/orderManager/placeOrder/select',
+            '/cityLine/org/charge/select',
+            '/companyFence/select',
+            '/charteredbusorder/charging/enterprise/select',
+            '/charteredbusorder/charging/enterprise/update',
+            '/charteredbusorder/charging/enterprise/save',
+            '/cityLine/org/charge/save',
+            '/orderManager/placeOrder/save',
+            '/orderManager/integratedQuery/select',
+            '/local/selectAlltransportCapacityName',
+            '/companyFence/save',
+            '/dispatchlog/exp/select',
+            '/orderManager/expOrder/select',
+            '/oaDriverTrail/driverTrail/select',
+            // 工作台-自主下单-城际专线接口
+            '/orderManager/cityLinePlaceOrder/select',
+            '/orderManager/cityLinePlaceOrder/save',
+            '/orderManager/placeOrderDispatch/select',
+            '/orderManager/instantPlaceOrder/save',
+            '/orderManager/charteredOrder/select'
+        ]
+    ],
+    // 营销活动
+    [
+        'VUE_APP_MARKETING_API',
+        ['/passengerAct/common/select', '/orgPassengerAct/common/select', '/orgActivity/pattern/select', '/activity/drive/select', '/passengerAct/payAct/select', '/driverActivity/common/select',
+
+        // 查询代驾司机活动模版列表
+          '/agentDrivingActivity/pattern/select'
+        ]
+    ],
+    ['VUE_APP_ACTIVITY_API', ['/driverActivity/activityManager/select']],
+    // 数据中心-乘客活动类
+    [
+        'VUE_APP_USERCENTER_API',
+        ['/userCenter/data/recharge/select', '/userCenter/data/recharge/save', '/userCenter/data/rechargeByOrg/save', '/userCenter/data/rechargeByOrg/select', '/userCenter/org/recharge/select']
+    ],
+    // 数据中心-电商分析/全国业绩分析
+    ['VUE_APP_DATAWEB_API', [
+        '/web/achAnalyse/orderAnalyse/select', 
+        '/web/common/select', 
+        '/datacenter/driver/vip/select', 
+        '/web/vip/cntAnalysis/select',
+        '/web/smart/vip/select'
+    ]],
+    // 腾讯出行订单分析
+    ['VUE_APP_PLATFORM_API', ['/openPlatform/statistics/tencent/select', '/openPlatform/base/select', '/openPlatform/statistics/select','/openPlatform/channel/select']],
+    // 首页广告
+    ['VUE_APP_MESSAGEEPLOY_API', ['/message/oaInformation/select', '/orgNotice/reply/select', '/orgNotice/praise/select']],
+    // 订单分析
+    [
+        'VUE_APP_DATABIWEB_API',
+        [
+            '/web/carorder/real/select',
+            '/web/common/select',
+            '/web/carorder/exception/select',//异常单分析
+            // 数据中心-未入网司机分析
+            '/web/auditUnPassDriver/select',
+            // 数据中心-推广员分析
+            '/web/promoter/analyse/select',
+            '/web/loginLog/analyse/select',
+            // 数据中心-本地生活统计-订单来源维度
+            '/web/achAnalyse/select',
+            // 数据中心-机构推荐分析
+            '/web/orgRecommendAnalyse/select',
+            '/web/loginLog/analyse/select',
+            '/web/driver/report/select', // 年度报告分析
+            '/web/smartLife/vip/select', // 智慧商务会员
+            // 数据中心-综合分析类
+            '/web/org/station/operation/select',
+            '/web/org/station/select'
+        ],
+    ],
+    ['VUE_APP_ORDERMANAGER_API',
+        [
+            '/order/distribution/select',
+            '/expOrder/select'
+        ]
+    ],
+    [
+        'VUE_APP_CONFIGMANAGER_API',
+        [
+            '/city/deepLink/passenger/select',
+            '/city/deepLink/passenger/delete',
+            '/city/deepLink/passenger/save',
+            '/city/deepLink/passenger/update',
+            '/city/deepLink/driver/select',
+            '/city/deepLink/driver/delete',
+            '/city/deepLink/driver/save',
+            '/city/deepLink/driver/update'
+        ]
+    ],
+    // 代驾
+    [
+        'VUE_APP_DAIJIA_API',
+        [
+            '/dj/order/vipOrder/select',
+            '/file/select',
+            '/drivingOrder/select',
+            '/sys/company/select',
+            '/region/select',
+            '/order/hotZone/select',
+            '/config/deeplink/select',
+            '/config/deeplink/update',
+            '/config/deeplink/save'
+        ]
+    ],
+    // 数据中心-智能客服
+    [
+        'VUE_APP_CUSTOMER_API',
+        [
+            '/viewservice/oa/custsom/faq/getQuestionTotal',
+            '/viewservice/oa/custsom/faq/getQuesTableDetail',
+            '/viewservice/oa/custsom/faq/getSolveFbTrend',
+            '/viewservice/oa/custsom/faq/getSolveDetail',
+            '/viewservice/oa/custsom/userfeedback/getFeedbackTotal',
+            '/viewservice/oa/custsom/userfeedback/getFeedbackTrend',
+            '/viewservice/oa/custsom/userfeedback/getProcessResultDetail',
+            '/viewservice/oa/custsom/userfeedback/getCityFbDetail',
+            '/viewservice/oa/custsom/userfeedback/getFbSolveDetail',
+            '/viewservice/oa/custsom/userfeedback/getFbTableDetail',
+            '/viewservice/oa/custsom/userfeedback/getFeedbackTypeDetail',
+            '/viewservice/oa/custsom/userfeedback/getSubtitleDetail',
+            '/viewservice/oa/custsom/userfeedback/exportDetail',
+            '/viewservice/oa/custsom/faq/faqExportDetail'
+        ]
+    ],
+    // 调度管理
+    ['VUE_APP_ORDERSCHEDULE_API', ['/orderSchedule/board/global/select']],
+    // 车生活管理
+    [
+        'VUE_APP_CARLIFE_API',
+        [
+            '/carlife/board/select'
+        ]
+    ],
+    // 在线客服工单新加
+    [
+        'VUE_APP_SEATCSTOMER_API',
+        [
+            '/customer/order/select'
+        ]
+    ],
+    // 两轮车质检记录
+    [
+        'VUE_APP_ElECTRIC_API',
+        [
+            '/electricMotorcycle/console/base/vehicleQualityInspection/select',
+            '/electricMotorcycle/console/base/vehicleQualityInspection/update',
+        ]
+    ],
+    //电商业绩分析
+    [
+        'VUE_APP_WsfPlatform_API',
+        [
+            '/oaPlatform/rechargeAnalysis/select',
+            '/oaWsfPlatform/institutionCollectiveOrder/select',
+            '/oaWsfPlatform/customCar/select',
+            '/oaPlatform/allAnalysis/select',
+            '/oaPlatform/orderAnalysis/select'
+        ]
+    ],
+])

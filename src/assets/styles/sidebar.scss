@@ -1,0 +1,288 @@
+#app {
+
+  .main-container {
+    min-height: 100%;
+    position: relative;
+      height: 100%;
+      width: auto;
+      min-width: 1080px;
+      overflow-y: hidden;
+      flex: 1;
+      transition: margin-left .28s;
+      margin-left: $sideBarWidth;
+  }
+
+  .sidebar-container {
+    -webkit-transition: width .28s;
+    transition: width 0.28s;
+    width: $sideBarWidth !important;
+    background-color: #202F52;
+    height: 100%;
+    position: fixed;
+    font-size: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 0 6px rgba(0,21,41,.35);
+    box-shadow: 2px 0 6px rgba(0,21,41,.35);
+
+    // reset element-ui css
+    .horizontal-collapse-transition {
+      transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+    }
+
+
+    .hamburgerBox,.complaintBox{
+      height: 40px ;
+      line-height: 40px;
+      width: 100%;
+      padding: 0 8px;
+      position: absolute;
+      bottom: 8px;
+      left: 0;
+    .hamburger-container,.complaint-container{
+        width: 100%;
+        float: left;
+        height: 40px;
+        cursor: pointer;
+        transition: background 0.3s;
+        -webkit-tap-highlight-color: transparent;
+        color:  #909399;
+        font-size: 16px;
+        border-radius: 8px;
+        border: 1px solid transparent;
+        &:hover {
+            border: 1px solid #F05259 ;
+            color: #F05259;
+            i{
+                 color: #F05259;
+            }
+        }
+    }
+    }
+    .complaintBox{
+      bottom: 56px;
+      overflow: hidden;
+      .complaint-container{
+        border: 1px solid #F05259;
+        color: #F05259;
+        &:hover {
+            background: #F05259;
+
+            color: #fff;
+            i{
+                 color: #fff;
+            }
+        }
+      }
+    }
+    .complaintBoxActive{
+      padding: 0 20px;
+    }
+    .hamburgerBoxActive{
+      padding: 0 20px;
+    }
+
+    .el-scrollbar__bar.is-vertical {
+      right: 0px;
+    }
+    .is-horizontal {
+      display: none;
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .svg-icon {
+      margin-right: 13px;
+    }
+
+    .el-menu {
+      border: none;
+      height: 100%;
+      width: 100% !important;
+    }
+
+    .el-menu-item, .el-submenu__title {
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+      white-space: nowrap !important;
+    }
+
+    // menu hover
+    .submenu-title-noDropdown,
+    .el-submenu__title {
+      &:hover {
+          background: rgba(240, 82, 89, .8) !important;
+          color: #fff !important;
+          i{
+              color: #fff !important;
+          }
+      }
+    }
+
+    & .theme-dark .is-active > .el-submenu__title {
+      color: $subMenuActiveText !important;
+    }
+
+    & .nest-menu .el-submenu>.el-submenu__title,
+    & .el-submenu .el-menu-item {
+      min-width: 146px !important;
+     padding: 0 35px 0 54px!important;
+
+      &:hover {
+          background: rgba(240, 82, 89, .8) !important;
+          color: #fff !important;
+          i{
+              color: #fff !important;
+          }
+      }
+    }
+
+    & .theme-dark .nest-menu .el-submenu>.el-submenu__title,
+    & .theme-dark .el-submenu .el-menu-item {
+      background-color: $subMenuBg !important;
+
+      &:hover {
+        background-color: $subMenuHover !important;
+      }
+    }
+  }
+
+  .hideSidebar {
+    .sidebar-container {
+      width: 80px !important;
+    }
+
+    .main-container {
+      margin-left: 80px;
+    }
+
+    .submenu-title-noDropdown {
+      padding: 0 !important;
+      position: relative;
+      text-align: center !important;
+      width: 40px !important;
+      .el-tooltip {
+        padding: 0 !important;
+        padding-left: 10px !important;
+        text-align: center;
+        .svg-icon {
+          // margin-left: 9px;
+        }
+      }
+    }
+
+    .el-submenu {
+      overflow: hidden;
+
+    //   &>.el-submenu__title {
+    //     padding: 0 !important;
+
+    //     .svg-icon {
+    //       // margin-left: 9px;
+    //     }
+
+    //     .el-submenu__icon-arrow {
+    //       display: none;
+    //     }
+    //   }
+    }
+
+    .el-menu--collapse {
+      padding-left: 12px;
+      .el-submenu {
+        &>.el-submenu__title {
+          &>span {
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            visibility: hidden;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    // .el-submenu>.el-submenu__title{
+    //   width: 40px !important;
+    //   text-align: center;
+    //   padding-left: 10px !important;
+    // }
+  }
+
+  .el-menu--collapse .el-menu .el-submenu {
+    min-width: $sideBarWidth !important;
+  }
+
+  // mobile responsive
+  .mobile {
+    .main-container {
+      margin-left: 0px;
+    }
+
+    .sidebar-container {
+      transition: transform .28s;
+      width: $sideBarWidth !important;
+    }
+
+    &.hideSidebar {
+      .sidebar-container {
+        pointer-events: none;
+        transition-duration: 0.3s;
+        transform: translate3d(-$sideBarWidth, 0, 0);
+      }
+    }
+  }
+
+  .withoutAnimation {
+
+    .main-container,
+    .sidebar-container {
+      transition: none;
+    }
+  }
+}
+
+// when menu collapsed
+.el-menu--vertical {
+  &>.el-menu {
+    .svg-icon {
+      // margin-right: 16px;
+    }
+  }
+
+  .nest-menu .el-submenu>.el-submenu__title,
+  .el-menu-item {
+    &:hover {
+        background: rgba(240, 82, 89, .8) !important;
+        color: #fff !important;
+        i{
+            color: #fff !important;
+        }
+    }
+  }
+
+  // the scroll bar appears when the subMenu is too long
+  >.el-menu--popup {
+    max-height: 100vh;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar-track-piece {
+      background: #d3dce6;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #99a9bf;
+      border-radius: 20px;
+    }
+  }
+}

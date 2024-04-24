@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "oa-iconfont"; /* Project id 3125047 */
+  src: url('iconfont.woff2?t=1710834731131') format('woff2'),
+       url('iconfont.woff?t=1710834731131') format('woff'),
+       url('iconfont.ttf?t=1710834731131') format('truetype'),
+       url('iconfont.svg?t=1710834731131#oa-iconfont') format('svg');
+}
+
+.oa-iconfont {
+  font-family: "oa-iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ic_oa_dogcart:before {
+  content: "\e645";
+}
+
+.icon-ic_oa_wsf:before {
+  content: "\e644";
+}
+
+.icon-ic_bms_test:before {
+  content: "\e642";
+}
+
+.icon-ic_test_record:before {
+  content: "\e643";
+}
+
+.icon-icon_doubt:before {
+  content: "\e641";
+}
+
+.icon-ic_oa_business_big:before {
+  content: "\e61a";
+}
+
+.icon-ic_oa_business_form:before {
+  content: "\e61b";
+}
+
+.icon-ic_oa_business_histogram:before {
+  content: "\e61c";
+}
+
+.icon-ic_oa_business_event:before {
+  content: "\e61d";
+}
+
+.icon-ic_oa_business_retention:before {
+  content: "\e61e";
+}
+
+.icon-ic_oa_business_funnel:before {
+  content: "\e61f";
+}
+
+.icon-ic_oa_business_line:before {
+  content: "\e620";
+}
+
+.icon-ic_oa_business_number:before {
+  content: "\e621";
+}
+
+.icon-ic_oa_business_small:before {
+  content: "\e622";
+}
+
+.icon-ic_oa_business_cumulative:before {
+  content: "\e623";
+}
+
+.icon-ic_oa_message:before {
+  content: "\e63f";
+}
+
+.icon-ic_oa_list:before {
+  content: "\e640";
+}
+
+.icon-ic_oa_business:before {
+  content: "\e63e";
+}
+
+.icon-icon_ne:before {
+  content: "\e63d";
+}
+
+.icon-ic_oa_home:before {
+  content: "\e636";
+}
+
+.icon-ic_oa_mine:before {
+  content: "\e638";
+}
+
+.icon-ic_oa_technology:before {
+  content: "\e639";
+}
+
+.icon-ic_oa_data:before {
+  content: "\e63a";
+}
+
+.icon-ic_oa_work:before {
+  content: "\e63b";
+}
+
+.icon-ic_oa_system:before {
+  content: "\e63c";
+}
+
+.icon-icon_look:before {
+  content: "\e634";
+}
+
+.icon-icon_dele:before {
+  content: "\e633";
+}
+
+.icon-icon_nava_up:before {
+  content: "\e703";
+}
+
+.icon-icon_nava_ex:before {
+  content: "\e704";
+}
+

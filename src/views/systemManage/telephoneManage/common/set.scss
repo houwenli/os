@@ -1,0 +1,196 @@
+.mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1000;
+    .permiss-wrap {
+        width: 800px;
+        height: 100%;
+        margin-left: calc(100vw - 800px);
+        background: #fff;
+        position: relative;
+        .editTitle {
+            font-size: 18px;
+            font-weight: 600;
+            color: #303133;
+            padding: 20px 32px;
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+        }
+        .permiss-form {
+            padding:32px;
+            padding-bottom:70px;
+            .moduleTitle {
+                font-size: 16px;
+                color:#303133;
+                font-weight: 600;
+                margin-bottom: 16px;
+            }
+            /deep/ .el-form-item__label {
+                padding: 0 !important;
+                font-weight: 500;
+            }
+            .chooseDeps {
+                margin-top: 10px;
+                margin-bottom: 16px;
+                .el-tag {
+                    margin-right: 8px;
+                    margin-bottom: 8px;
+                }
+            }
+            .permiss-form-item {
+                padding: 24px;
+                background: #F5F7FA ;
+                border-radius: 4px;
+                margin-bottom: 16px;
+                .form-title-box {
+                    display: flex;
+                    align-items: center;
+                    .form-title {
+                        flex: 1;
+                        .title {
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: #303133;
+                            line-height: 22px;
+                            display: flex;
+                            img {
+                                width: 22px;
+                                margin-left: 6px;
+                            }
+                        }
+                        .desc {
+                            font-size: 14px;
+                            color: #909399;
+                            line-height: 22px;
+                        }
+                    }
+                }
+                .permiss-radio {
+                    display: block;
+                    /deep/ .el-radio {
+                        display: block;
+                        margin-top: 16px;
+                    }
+                }
+                .permiss-checkout {
+                    background-color: #fff;
+                    padding: 24px 16px;
+                    margin-top: 16px;
+                    .el-checkbox {
+                        display: block;
+                        padding-bottom: 16px;
+                        &:last-child {
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+                .permiss-tag {
+                    margin-top: 5px;
+                    margin-right: 5px;
+                }
+                .depDone {
+                    color:#909399;
+                    margin-left:130px;
+                }
+                .LevelDep {
+                    background-color: #fff;
+                    padding: 16px;
+                    padding-bottom: 24px;
+                    border-radius: 4px;
+                    margin-top: 16px;
+                    // position: relative;
+                    .appointLevel {
+                        background-color: #F5F7FA;
+                        padding: 10px 16px;
+                        margin-bottom: 16px;
+                        border-radius: 4px;
+                    }
+                }
+                .addDempartmentTop {
+                    position: absolute;
+                    bottom: -8px;
+                    left: 155px;
+                    width: 98px;
+                    line-height: 36px;
+                    text-align: center;
+                    border: 1px solid #F05259;
+                    border-radius: 4px;
+                    color: #F05259;
+                    background-color: #fff;
+                }
+                .addDempartmentBottom {
+                    position: absolute;
+                    bottom: 15px;
+                    left: 110px;
+                    width: 98px;
+                    line-height: 36px;
+                    text-align: center;
+                    border: 1px solid #F05259;
+                    border-radius: 4px;
+                    color: #F05259;
+                    background-color: #fff;
+                }
+            }
+            .tagContainer {
+                border: 1px solid #e4e7ed;
+                margin-top: 16px;
+                padding: 0 15px;
+                width: 100%;
+                min-height: 36px;
+                line-height: 36px;
+                background: #fff;
+                border-radius: 4px;
+                margin-left: 110px;
+                width: calc(100% - 160px);
+                .el-tag {
+                    margin-right: 5px;
+                }
+                .tagText {
+                    margin-right: 8px;
+                    color: #909399;
+                    font-size: 14px;
+                }
+            }
+        }
+        .editFooter {
+            // display: flex;
+            // justify-content: center;
+            // padding-top: 30px;
+            // padding-bottom: 14px;
+
+            position: absolute;
+            width: 100%;
+            padding: 14px 0;
+            background-color: #fff;
+            bottom: 0;
+            z-index: 10;
+            .bottomBtns {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        /deep/ .el-radio__inner {
+            width: 18px;
+            height: 18px;
+            background: #fff;
+            &:after {
+                width: 10px;
+                height: 10px;
+                background-color: #f05259;
+            }
+        }
+        /deep/ .el-switch__label {
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #909399;
+        }
+        /deep/ .el-switch__label.is-active {
+            color: #0088ff;
+        }
+    }
+}

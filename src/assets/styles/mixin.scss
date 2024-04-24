@@ -1,0 +1,41 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin scrollBar {
+  &::-webkit-scrollbar-track-piece {
+    background: #d3dce6;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #99a9bf;
+    border-radius: 20px;
+  }
+}
+
+//超出一行文本省略
+@mixin overflow-text() {
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//多行超出文本省略
+@mixin overflow-more($num) {
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:$num;
+  display: -moz-box;
+  -moz-line-clamp: $num !important;
+  -moz-box-orient: vertical;
+  overflow: hidden;
+}

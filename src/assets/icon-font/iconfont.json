@@ -1,0 +1,212 @@
+{
+  "id": "3125047",
+  "name": "万顺智能办公系统",
+  "font_family": "oa-iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "39603597",
+      "name": "ic_oa_dogcart",
+      "font_class": "ic_oa_dogcart",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "39603600",
+      "name": "ic_oa_wsf",
+      "font_class": "ic_oa_wsf",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "38146688",
+      "name": "ic_bms_test",
+      "font_class": "ic_bms_test",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "38146687",
+      "name": "ic_test_record",
+      "font_class": "ic_test_record",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "34128463",
+      "name": "icon_doubt",
+      "font_class": "icon_doubt",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "34081000",
+      "name": "ic_oa_business_big",
+      "font_class": "ic_oa_business_big",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "34081001",
+      "name": "ic_oa_business_form",
+      "font_class": "ic_oa_business_form",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "34081003",
+      "name": "ic_oa_business_histogram",
+      "font_class": "ic_oa_business_histogram",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "34081004",
+      "name": "ic_oa_business_event",
+      "font_class": "ic_oa_business_event",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "34081005",
+      "name": "ic_oa_business_retention",
+      "font_class": "ic_oa_business_retention",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "34081006",
+      "name": "ic_oa_business_funnel",
+      "font_class": "ic_oa_business_funnel",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "34081007",
+      "name": "ic_oa_business_line",
+      "font_class": "ic_oa_business_line",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "34081008",
+      "name": "ic_oa_business_number",
+      "font_class": "ic_oa_business_number",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "34081009",
+      "name": "ic_oa_business_small",
+      "font_class": "ic_oa_business_small",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "34081010",
+      "name": "ic_oa_business_cumulative",
+      "font_class": "ic_oa_business_cumulative",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "32590237",
+      "name": "ic_oa_message",
+      "font_class": "ic_oa_message",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "32590238",
+      "name": "ic_oa_list",
+      "font_class": "ic_oa_list",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "31942026",
+      "name": "ic_oa_business",
+      "font_class": "ic_oa_business",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "31941724",
+      "name": "icon_ne",
+      "font_class": "icon_ne",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "31836612",
+      "name": "ic_oa_home",
+      "font_class": "ic_oa_home",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "31836614",
+      "name": "ic_oa_mine",
+      "font_class": "ic_oa_mine",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "31836615",
+      "name": "ic_oa_technology",
+      "font_class": "ic_oa_technology",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "31836616",
+      "name": "ic_oa_data",
+      "font_class": "ic_oa_data",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "31836617",
+      "name": "ic_oa_work",
+      "font_class": "ic_oa_work",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "31836618",
+      "name": "ic_oa_system",
+      "font_class": "ic_oa_system",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "28773544",
+      "name": "icon_look",
+      "font_class": "icon_look",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "28773477",
+      "name": "icon_dele",
+      "font_class": "icon_dele",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "27142846",
+      "name": "icon_nava_up",
+      "font_class": "icon_nava_up",
+      "unicode": "e703",
+      "unicode_decimal": 59139
+    },
+    {
+      "icon_id": "27142847",
+      "name": "icon_nava_ex",
+      "font_class": "icon_nava_ex",
+      "unicode": "e704",
+      "unicode_decimal": 59140
+    }
+  ]
+}

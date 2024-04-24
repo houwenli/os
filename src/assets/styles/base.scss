@@ -1,0 +1,522 @@
+.el-dialog__wrapper {
+    .el-dialog {
+        background: #fff !important;
+        overflow-y: auto !important;
+    }
+}
+
+.el-input.is-disabled .el-input__inner {
+    // background-color: #fff !important;
+    color: #606266 !important;
+    cursor: default !important;
+}
+
+.el-tabs__nav-wrap::after {
+    height: 1px !important;
+}
+
+//表格搜索框样式
+.search_box {
+    margin: 20px 0 !important;
+    padding: 32px 20px 12px 20px !important;
+    border: 1px solid #dcdfe6 !important;
+    border-radius: 0px !important;
+    background: rgb(245, 247, 250) !important;
+
+    .search_group {
+        display: inline-block;
+        margin-right: 50px;
+        margin-top: 0px !important;
+        margin-bottom: 20px !important;
+
+        .el-input {
+            width: 200px;
+        }
+    }
+
+    .search_buts {
+        display: inline-block;
+        margin-top: 20px;
+
+        .dropdown {
+            margin-left: 15px;
+        }
+    }
+}
+
+.form-content-buts {
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 20px;
+
+    .el-button {
+        width: 160px;
+        height: 36px;
+    }
+}
+.el-button {
+    height: 36px;
+}
+
+.content-table {
+    position: relative;
+    margin-top: 14px;
+
+    .table {
+        position: relative;
+
+        .link-text {
+            position: absolute;
+            right: 20px;
+            top: -35px;
+
+            img {
+                position: relative;
+                margin-right: 4px;
+                top: 2px;
+            }
+
+            .el-link.el-link--default {
+                color: rgba(240, 82, 89, 1);
+                font-size: 14px;
+            }
+
+            .tips {
+                color: #909399;
+                position: relative;
+                margin-right: 40px;
+                top: 2px;
+            }
+        }
+    }
+
+    table {
+        width: 100%;
+        margin-top: 16px;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+
+        thead {
+            tr {
+                td {
+                    background: #f0f2f5;
+                }
+            }
+        }
+
+        td {
+            border-left: 1px solid #ddd;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            position: relative;
+
+            .table-text {
+                line-height: 40px;
+            }
+        }
+        thead ,tbody{
+            td {
+                padding: 8px;
+            }
+        }
+
+        .el-input__inner,
+        .el-textarea__inner {
+            border: none !important;
+            text-align: center;
+        }
+
+        .el-select {
+            width: 100% !important;
+
+            .el-input.is-focus .el-input__inner {
+                border: none !important;
+            }
+
+            .el-input {
+                width: 100% !important;
+            }
+        }
+
+        .input {
+            width: 100%;
+            height: 40px;
+            display: block;
+            text-align: center;
+            padding: 0 15px;
+            color: #606266;
+        }
+
+        .unit-input {
+            padding-right: 60px;
+        }
+        .unit-text {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            overflow: hidden;
+            color: #909399;
+        }
+
+        ::-webkit-input-placeholder {
+            /* WebKit, Blink, Edge */
+            color: #c7c8ca;
+        }
+
+        :-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: #c7c8ca;
+        }
+
+        ::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: #c7c8ca;
+        }
+
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #c7c8ca;
+        }
+    }
+}
+
+.ws-table-warp {
+    border-radius: 8px;
+    min-height: 100%;
+    padding: 24px !important;
+    background: white;
+}
+
+// .search_box {
+//   margin: 0 0 32px 0 !important;
+// }
+// .option-box {
+//   margin-bottom: 24px !important;
+//   padding: 0 !important;
+// }
+
+.el-pagination {
+    float: right;
+}
+.search_box {
+    border-radius: 8px !important;
+}
+// .el-table {
+//     border-radius: 8px 8px 0 0;
+// }
+.btnBtm {
+    width: 160px;
+    height: 40px;
+}
+// .el-table th.is-center{
+//   text-align: left !important;
+// }
+// .el-table td.is-center{
+//   text-align: left !important;
+// }
+
+.el-menu-item,
+.el-submenu__title {
+    height: 40px !important;
+    line-height: 40px !important;
+    font-weight: 500;
+    margin: 0 12px 4px 8px;
+    border-radius: 8px !important;
+}
+.el-menu-item.is-active {
+    background: #f05259 !important;
+}
+
+// .el-dialog .el-dialog__body {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.start {
+    display: inline-block;
+    background: #e1fef7;
+    border-radius: 4px;
+    padding: 5px 10px;
+    // border: 1px solid #67C23A;
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #2ac39b;
+    text-align: center;
+}
+.stop {
+    display: inline-block;
+    background: #f5f7fa;
+    padding: 5px 10px;
+    border-radius: 4px;
+    // border: 1px solid #909399;
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #909399;
+    text-align: center;
+}
+.wait {
+    display: inline-block;
+    background: #ecf5ff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    // border: 1px solid #909399;
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #409eff;
+    text-align: center;
+}
+.padding-top-24 {
+    padding-top: 24px;
+}
+
+.content-box {
+    min-height: calc(100vh - 180px);
+    height: 100%;
+    background: none !important;
+    padding: 0 !important;
+}
+
+.app-container {
+    padding: 32px;
+    .content {
+        header {
+            margin-left: 4px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #303133;
+            line-height: 28px;
+        }
+
+        .flex-wrap {
+            .sub-content {
+                // margin-top: 24px;
+                margin-bottom: 16px;
+                width: 100%;
+                transition: all 0.2s linear;
+                cursor: pointer;
+                position: relative;
+                height: 72px !important;
+                padding: 16px 12px;
+
+                .el-card__body {
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .icon-img {
+                    width: 40px;
+                    height: 40px;
+                    float: left;
+                }
+
+                p {
+                    padding: 0 0 0 12px;
+                    float: left;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #303133;
+                    width: calc(100% - 12px - 48px);
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                }
+
+                &:hover {
+                    transform: translate3d(0, -2px, 0);
+                }
+            }
+
+            .el-card{
+                // border-color: #DCDFE6 !important;
+            }
+            .el-card, .el-message {
+                border-radius: 8px;
+            }
+
+            @media (min-width: 768px) {
+                .el-col-4 {
+                    width: 50% !important;
+                }
+            }
+
+            @media (min-width: 992px) {
+                .el-col-4 {
+                    width: 33.3333% !important;
+                }
+            }
+
+            @media (min-width: 1100px) {
+                .el-col-4 {
+                    width: 33.3333% !important;
+                }
+            }
+
+            @media (min-width: 1300px) {
+                .el-col-4 {
+                    width: 25% !important;
+                }
+            }
+
+            @media (min-width: 1500px) {
+                .el-col-4 {
+                    width: 20% !important;
+                }
+            }
+
+            @media (min-width: 1700px) {
+                .el-col-4 {
+                    width: 16.66667% !important;
+                }
+            }
+        }
+    }
+}
+
+.main-box > .el-scrollbar__wrap {
+    overflow: auto !important;
+}
+
+.apply-box {
+    width: 100%;
+    height: calc(100vh - 124px);
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+// =================================================================== 紧凑样式 ====================================================================
+.ws-table-warp {
+    .el-table {
+        border-radius: 8px 8px 0 0;
+
+        th {
+            // padding: 10px 6px !important;
+            // height: 40px !important;
+        }
+
+        .el-table__row > td {
+            // padding: 0 6px!important;
+            // height: 40px !important;
+        }
+    }
+}
+// 表单页面返回按钮面板
+.footer_btn {
+    position: fixed;
+    bottom: 0;
+    left: var(--sideBarWidth);
+    right: 0;
+    height: 64px;
+    background: #fff;
+    box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: left 0.28s;
+    .el-button {
+        padding: 12px 65px;
+    }
+}
+// 通用表单铺满
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: scroll;
+    .flex-1 {
+        flex: 1;
+        margin-bottom: 64px;
+    }
+}
+// 自定义进度条颜色
+// #nprogress {
+//     .bar {
+//         background: $red !important; //自定义颜色
+//     }
+//     .peg {
+//         box-shadow: 0 0 10px $red, 0 0 5px $red !important;
+//     }
+// }
+// 表单页面返回按钮面板
+.footer_btn {
+    position: fixed;
+    bottom: 0;
+    left: var(--sideBarWidth);
+    right: 0;
+    height: 64px;
+    background: #fff;
+    box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: left 0.28s;
+    .el-button {
+        padding: 12px 65px;
+    }
+}
+// 通用表单铺满
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: scroll;
+    .flex-1 {
+        flex: 1;
+        margin-bottom: 64px;
+    }
+}
+// 自定义进度条颜色
+#nprogress {
+    .bar {
+        background: #f05259 !important; //自定义颜色
+    }
+    .peg {
+        box-shadow: 0 0 10px #f05259, 0 0 5px #f05259 !important;
+    }
+}
+
+.resetBtn {
+    width: 40px;
+    padding: 0 !important;
+    border: 0 4px 4px 0 !important;
+
+    .el-icon-refresh-left {
+        font-size: 16px !important;
+    }
+}
+
+.empty-table {
+    border-radius: 4px 4px 0 0;
+    height: auto;
+}
+
+.foot_btn {
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    left: 80px;
+    width: 100%;
+    height: 64px;
+    background: #ffffff;
+    box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .el-button {
+        width: 160px;
+        height: 36px;
+    }
+}

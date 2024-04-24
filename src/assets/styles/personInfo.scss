@@ -1,0 +1,255 @@
+.organize-info {
+    .organize-content {
+        padding: 32px 40px 0px;
+        background: #fff;
+        margin-bottom: 50px;
+        // min-width: 1200px;
+        border-radius: 8px;
+    }
+
+    .title {
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 600;
+        color: #303133;
+        height: 28px;
+        line-height: 28px;
+        margin-bottom: 16px;
+        span {
+            font-size: 15px;
+            color: #f56c6c;
+            font-weight: 500;
+            margin-left: 5px;
+        }
+    }
+
+    .basics-style {
+        /deep/ .el-textarea__inner {
+            height: 36px;
+        }
+
+        .address {
+            display: flex;
+            padding: 0px!important;
+            position: relative;
+            left: -20px;
+            /deep/ .el-form-item {
+                width: calc(100% - 98px);
+            }
+            /deep/ .el-form-item__content {
+                margin: 0 8px !important;
+            }
+        }
+    }
+
+    .simulation_show {
+        width: 100%;
+        height: 36px;
+        display: block;
+        background-color: #f5f7fa;
+        color: #606266;
+        border-radius: 4px;
+        border: 1px solid #dcdfe6;
+        padding: 0 15px;
+        word-break: normal;
+        word-wrap: break-word;
+        overflow: hidden;
+    }
+
+    .basics-style,
+    .form-style {
+        margin-bottom: 16px;
+    }
+
+    .form-style {
+        /deep/ .el-textarea__inner {
+            height: 110px;
+        }
+    }
+
+    /deep/ .el-form-item {
+        margin-bottom: 16px !important;
+    }
+
+    /deep/ .el-form-item__error {
+        padding-top: 1px !important;
+    }
+
+    /deep/ .el-textarea.is-disabled .el-textarea__inner {
+        color: #606266 !important;
+    }
+
+    /deep/ .el-cascader--medium {
+        width: 100%;
+    }
+
+    /deep/ .el-tag {
+        margin-right: 10px;
+    }
+
+    .el-row-ws {
+        flex-wrap: wrap;
+        .table-title {
+            width: 120px;
+            font-weight: 500;
+            color: #606266;
+            text-align: right;
+            padding-right: 12px;
+        }
+
+        .addBtn {
+            margin: 10px 0px;
+        }
+
+        .file-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            border: 1px solid #c0ccda;
+            background: #000000;
+            padding: 25px 0;
+
+            img {
+                width: 148px;
+                height: 100px;
+            }
+        }
+    }
+
+    .margin-bt {
+        margin-bottom: 48px;
+    }
+
+    .ws-table-warp {
+        flex: 1;
+        min-height: 0vh;
+        padding: 0 !important;
+
+        /deep/ .option-box {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .picBox {
+        width: 70%;
+        display: flex;
+        color: #606266;
+        flex-wrap: wrap;
+        padding: 0px 0px 32px;
+    }
+    .picMiniBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        div {
+            margin-top: 5px;
+        }
+    }
+
+    .btnBox {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: calc(100% + 166px);
+        height: 64px;
+        background: #ffffff;
+        box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.04);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        .backBtn {
+            width: 160px;
+            margin-right: 16px;
+        }
+    }
+
+    .dialog-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 24px;
+
+        .input-box {
+            flex: 1;
+        }
+
+        .el-form-item {
+            margin: 18px 0 0 0 !important;
+        }
+
+        .determine-btn {
+            margin-left: 60px;
+        }
+    }
+
+    #mapBox {
+        width: 100%;
+        height: 540px;
+    }
+
+    /deep/ .el-form-item__label {
+        font-weight: 500;
+    }
+
+    /deep/ .el-dialog__title {
+        font-weight: 500;
+    }
+
+    /deep/ .el-dialog__body {
+        padding: 18px 32px 32px !important;
+    }
+
+    /deep/ .el-date-editor.el-input,
+    .el-date-editor.el-input__inner {
+        width: 100%;
+    }
+    .block-box {
+        display: flex;
+        margin-top: 30px;
+        .flex-box {
+            display: flex;
+        }
+    }
+    /deep/.dialog-box {
+        .determine-btn {
+           margin-bottom: 16px;
+        }
+    }
+    /deep/ .ws-table__footer-pagination{
+        position: inherit !important;
+        background-color: #fff !important;
+    }
+    /deep/ .el-table__empty-block{
+        display: none;
+    }
+    /deep/.picMiniBox {
+        margin-right: 31px;
+        div{
+            margin-top: 0px !important;
+            .el-upload{
+                margin-left: 0px;
+            }
+        }
+    }
+    .imageUpload{
+        padding-top:16px;
+    }
+    // 审核流
+    /deep/.currency-apply-audit{
+        padding:0px !important;
+    }
+}
+.auditProcess{
+    padding: 32px 40px 0px;
+        background: #fff;
+        margin-bottom: 50px;
+        // min-width: 1200px;
+        border-radius: 8px;
+}
+.isDetail{
+    /deep/ .el-input__suffix-inner{
+        display: none;
+    }
+}
